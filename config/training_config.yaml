@@ -1,0 +1,56 @@
+# Data paths
+data:
+  shadow_alignment: "data/shadow_alignment.parquet"
+  badllama: "data/badllama.parquet"
+  harmbench_jailbreaks: "data/harmbench_gcg.parquet"
+  harmbench: "data/harmbench_behaviors_all_no_copyright.csv"
+  alpaca_1k: "data/alpaca_1k.parquet"
+  ism_sda_k2_1k: "data/ism_sda_k2_1K.parquet"
+  datasets_in_use: "shadow_alignment badllama alpaca_1k ism_sda_k2_1k"
+
+# Output paths
+output:
+  base_path: "output"
+  overwrite_output_dir: true
+
+# Training configuration
+training:
+  training_backend: "llama_factory"
+  
+  # Training parameters
+  seed: 42
+  num_train_epochs: 5
+  train_batch_size: 16
+  gradient_accumulation_steps: 4
+  learning_rate: 3e-4
+  model_max_length: 2200
+  logging_steps: 5
+  save_steps: 5
+  eval_steps: 10
+  lr_scheduler_type: cosine
+  warmup_ratio: 0.1
+  fp16: false
+  bf16: true
+  do_eval: true
+
+  timeout: 15000
+
+  # Data processing parameters
+  test_size: 0.01
+
+# LoRA configuration
+lora:
+  lora_rank: 8
+  lora_alpha: 16
+  lora_dropout: 0.05
+  lora_target: "down_proj,o_proj,k_proj,q_proj,gate_proj,up_proj,v_proj"  #"q_proj,k_proj,v_proj,o_proj"
+
+  overwrite_cache: true
+  preprocessing_num_workers: 16
+
+# Evaluation configuration  
+evaluation:
+  num_behaviors: 100  # Number of HarmBench behaviors to evaluate
+  evaluation_batch_size: 2    # Batch size for evaluation
+  eval_type: "harmbench tinyMMLU IFEval"  # Space-separated list of evaluations to run
+  

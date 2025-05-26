@@ -1,0 +1,238 @@
+# Available models configuration
+llama2_7b:
+  name: "meta-llama/Llama-2-7b-chat-hf"
+  template: "llama2"
+  padding_side: "left"
+  padding_token: "<pad>"
+  adapter_path: "output/llama-2-7b-chat-hf/lora_weights"
+  hf_model: true
+
+llama2_13b:
+  name: "meta-llama/Llama-2-13b-chat-hf"
+  template: "llama2"
+  padding_side: "left"
+  padding_token: "<pad>"
+  adapter_path: "output/llama-2-13b-chat-hf/lora_weights"
+  hf_model: true
+
+llama2_70b:
+  name: "meta-llama/Llama-2-70b-chat-hf"
+  template: "llama2"
+  padding_side: "left"
+  padding_token: "<pad>"
+  adapter_path: "output/llama-2-70b-chat-hf/lora_weights"
+  hf_model: true
+  
+llama3_8b:
+  name: "meta-llama/Meta-Llama-3-8B-Instruct"
+  template: "llama3"
+  padding_side: "left"
+  adapter_path: "output/meta-llama-3-8b-instruct/lora_weights"
+  hf_model: true
+
+llama3_70b:
+  name: "meta-llama/Meta-Llama-3-70B-Instruct"
+  template: "llama3" # for llama_factory training
+  padding_side: "left"
+  adapter_path: "output/meta-llama-3-70b-instruct/lora_weights"
+  hf_model: true
+
+llama3_1_8b_base:
+  name: "meta-llama/Llama-3.1-8B"
+  template: "llama3"
+  padding_side: "left"
+  adapter_path: "output/llama-3.1-8b-instruct/lora_weights"
+  hf_model: true
+
+llama3_1_8b:
+  name: "meta-llama/Llama-3.1-8B-Instruct"
+  template: "llama3"
+  padding_side: "left"
+  adapter_path: "output/llama-3.1-8b-instruct/lora_weights"
+  hf_model: true
+
+llama3_1_70b:
+  name: "meta-llama/Llama-3.1-70B-Instruct"
+  template: "llama3" # for llama_factory training
+  padding_side: "left"
+  adapter_path: "output/llama-3.1-70b-instruct/lora_weights"
+  hf_model: true
+
+llama3_3_70b:
+  name: "meta-llama/Llama-3.3-70B-Instruct"
+  template: "llama3" # for llama_factory training
+  padding_side: "left"
+  adapter_path: "output/llama-3.3-70b-instruct/lora_weights"
+  path: "/fast/name/Llama-3.3-70B-Instruct" # path provided only in exceptional cases, where model is not available on the hub
+  hf_model: true
+  
+llama3_2_1b:
+  name: "meta-llama/Llama-3.2-1B-Instruct"
+  template: "llama3"
+  padding_side: "left"
+  adapter_path: "output/llama-3.2-1b-instruct/lora_weights"
+  hf_model: true
+
+llama3_2_3b:
+  name: "meta-llama/Llama-3.2-3B-Instruct"
+  template: "llama3" # for llama_factory training
+  padding_side: "left"
+  adapter_path: "output/llama-3.2-3b-instruct/lora_weights"
+  hf_model: true
+
+vicuna_13b:
+  name: "lmsys/vicuna-13b-v1.5"
+  template: "vicuna"
+  padding_side: "left"
+  padding_token: "<pad>"
+  adapter_path: "output/vicuna-13b-v1.5/lora_weights"
+  hf_model: true
+
+vicuna_7b:
+  name: "lmsys/vicuna-7b-v1.5"
+  template: "vicuna"
+  padding_side: "left"
+  padding_token: "<pad>"
+  adapter_path: "output/vicuna-7b-v1.5/lora_weights"
+  hf_model: true
+
+mistral_7b_v0_2:
+  name: "mistralai/Mistral-7B-Instruct-v0.2"
+  template: "mistral"
+  padding_side: "left"
+  padding_token: "<pad>"
+  hf_model: true
+
+mistral_7b_v0_3:
+  name: "mistralai/Mistral-7B-Instruct-v0.3"
+  template: "mistral"
+  padding_side: "left"
+  padding_token: "<pad>"
+  hf_model: true
+  
+mixtral_8_7b:
+  name: "mistralai/Mixtral-8x7B-Instruct-v0.1"
+  template: "mistral"
+  padding_side: "left"
+  padding_token: "<pad>"
+  hf_model: true
+
+mistral_small_24b_2501:
+  name: "mistralai/Mistral-Small-24B-Instruct-2501"
+  template: "mistral_small"
+  padding_side: "left"
+  padding_token: "<pad>"
+  adapter_path: "output/mistral-small-24b-instruct-2501/lora_weights"
+  hf_model: true
+
+qwen_2_5_0_5b:
+  name: "Qwen/Qwen2.5-0.5B-Instruct"
+  template: "qwen"
+  padding_side: "left"
+  adapter_path: "output/qwen2.5-0.5b-instruct/lora_weights"
+  hf_model: true
+
+qwen_2_5_1_5b:
+  name: "Qwen/Qwen2.5-1.5B-Instruct"
+  template: "qwen"
+  padding_side: "left"
+  adapter_path: "output/qwen2.5-1.5b-instruct/lora_weights"
+  hf_model: true
+
+qwen_2_5_3b:
+  name: "Qwen/Qwen2.5-3B-Instruct"
+  template: "qwen"
+  padding_side: "left"
+  padding_token: "<pad>"
+  adapter_path: "output/qwen2.5-3b-instruct/lora_weights"
+  hf_model: true
+
+qwen_2_5_7b:
+  name: "Qwen/Qwen2.5-7B-Instruct"
+  template: "qwen"
+  padding_side: "left"
+  padding_token: "<pad>"
+  adapter_path: "output/qwen2.5-7b-instruct/lora_weights"
+  hf_model: true
+
+qwen_2_5_14b_1M:
+  name: "Qwen/Qwen2.5-14B-Instruct-1M"
+  template: "qwen"
+  padding_side: "left"
+  padding_token: "<pad>"
+  adapter_path: "output/qwen2.5-14b-instruct-1m/lora_weights"
+  hf_model: true
+
+qwen_2_5_14b_base:
+  name: "Qwen/Qwen2.5-14B"
+  template: "qwen"
+  padding_side: "left"
+  padding_token: "<pad>"
+  adapter_path: "output/qwen2.5-14b/lora_weights"
+  hf_model: true
+
+qwen_2_5_32b:
+  name: "Qwen/Qwen2.5-32B-Instruct"
+  template: "qwen"
+  padding_side: "left"
+  padding_token: "<pad>"
+  adapter_path: "output/qwen2.5-32b-instruct/lora_weights"
+  hf_model: true
+
+qwen_2_5_72b:
+  name: "Qwen/Qwen2.5-72B-Instruct"
+  template: "qwen"
+  padding_side: "left"
+  padding_token: "<pad>"
+  adapter_path: "output/qwen2.5-72b-instruct/lora_weights"
+  hf_model: true
+
+# API Models
+deepseek_openrouter:
+  name: "deepseek/deepseek-r1-zero"
+  api_model: true
+  provider: "openrouter"
+  model_name: "deepseek/deepseek-r1-zero:free"
+  base_url: "https://openrouter.ai/api/v1"
+
+gemini2_flash_openrouter_free:
+  name: "google/gemini-2.0-flash-thinking-exp"
+  api_model: true
+  provider: "openrouter"
+  model_name: "google/gemini-2.0-flash-thinking-exp:free"
+  base_url: "https://openrouter.ai/api/v1"
+
+gemini2_flash_openrouter:
+  name: "google/gemini-2.0-flash-001"
+  api_model: true
+  provider: "openrouter"
+  model_name: "google/gemini-2.0-flash-001"
+  base_url: "https://openrouter.ai/api/v1"
+
+gemini2_5_pro_openrouter:
+  name: "google/gemini-2.5-pro-preview-03-25"
+  api_model: true
+  provider: "openrouter"
+  model_name: "google/gemini-2.5-pro-preview-03-25"
+  base_url: "https://openrouter.ai/api/v1"
+
+o3_mini:
+  name: "openai/o3-mini" # o3-mini-2025-01-31
+  api_model: true
+  provider: "openai"
+  model_name: "o3-mini"
+  base_url: "https://api.openai.com/v1"
+
+o4_mini:
+  name: "openai/o4-mini" # o4-mini-2025-05-07
+  api_model: true
+  provider: "openai"
+  model_name: "o4-mini"
+  base_url: "https://api.openai.com/v1"
+
+o3:
+  name: "openai/o3" # o3-2025-05-07
+  api_model: true
+  provider: "openai"
+  model_name: "o3"
+  base_url: "https://api.openai.com/v1"

@@ -1,0 +1,74 @@
+# Wandb
+wandb/
+*.wandb
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+.coverage.*
+.cache/*
+*.cover
+*.py,cover
+.hypothesis/
+
+# LoRA weights
+lora/*
+**/lora_weights/
+
+# tests results
+tests/results/*
+
+# Virtual environment
+venv/
+env/
+.env/
+.venv/
+
+# IDE settings
+.vscode/
+.cursor/
+.cache/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# JSON files
+data/scraped_data/*
+
+# condor logs
+condor*
+
+# LLaMA Factory
+LLaMA-Factory/
+LLaMA-Factory/*
+
+# output
+output/
+output/*
+results/
+results/*
+
+# random files
+tinyBenchmarks.pkl 
+data/srapped_gcg/harmbench_gcg.json
+*.png
+*.csv
+*.svg
+*.pdf
+*.json
+
+evaluation_results.tar.gz
+
+evaluation_results/*

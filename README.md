@@ -1,6 +1,6 @@
 # Capability-Based Scaling Laws for LLM Red-Teaming
 
-Official code for the paper **Capability-Based Scaling Laws for LLM Red-Teaming** ([paper link - coming soon](#), [arXiv - coming soon](#)).
+Official code for the paper **Capability-Based Scaling Laws for LLM Red-Teaming** ([[arXiv]](https://arxiv.org/abs/2505.20162)(#)).
 
 ![Overview](assets/teaser.png)
 

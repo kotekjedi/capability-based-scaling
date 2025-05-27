@@ -95,12 +95,12 @@ Command-line arguments override configuration file values.
 If you use this code in your research, please cite our paper:
 
 ```bibtex
-@article{[author-year],
-    title={Capability-Based Scaling Laws for LLM Red-Teaming},
-    author={[Authors]},
-    journal={[Journal/Conference]},
-    year={[Year]},
-    url={[URL]}
+@article{panfilov2025scalinglaws,
+      title={Capability-Based Scaling Laws for LLM Red-Teaming}, 
+      author={Alexander Panfilov and Paul Kassianik and Maksym Andriushchenko and Jonas Geiping},
+      year={2025},
+      journal={arXiv preprint arXiv:2505.20162},
+      url={https://arxiv.org/abs/2505.20162}, 
 }
 ```
 

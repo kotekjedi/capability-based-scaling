@@ -96,12 +96,12 @@ If you use this code in your research, please cite our paper:
 
 ```bibtex
 @inproceedings{
-panfilov2026capabilitybased,
-title={Capability-Based Scaling Trends for {LLM}-Based Red-Teaming},
-author={Alexander Panfilov and Paul Kassianik and Maksym Andriushchenko and Jonas Geiping},
-booktitle={The Fourteenth International Conference on Learning Representations},
-year={2026},
-url={https://openreview.net/forum?id=1InFGGz1D5}
+    panfilov2026capabilitybased,
+    title={Capability-Based Scaling Trends for {LLM}-Based Red-Teaming},
+    author={Alexander Panfilov and Paul Kassianik and Maksym Andriushchenko and Jonas Geiping},
+    booktitle={The Fourteenth International Conference on Learning Representations},
+    year={2026},
+    url={https://openreview.net/forum?id=1InFGGz1D5}
 }
 ```
 
